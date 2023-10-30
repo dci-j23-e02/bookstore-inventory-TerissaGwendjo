@@ -54,5 +54,31 @@ public class Inventory {
         }
     }
 
+    // Method to search for a book by title or author
+   public Book searchBook (String title, String author) {
+        for (int i=0; i<currentIndex; i++) {
+            Book book = books[i];
+            if (book != null && (book.getTitle().equals(title)) || book.getAuthor().equals(author)){
+                return book; // Match found, return book
+            }
+        }
+        return null; // no match found
+   }
+
+   // Method to calculate and display the total inventory value
+    public double calculateTotalInventoryValue() {
+        double totalValue = 0.0;
+        for (int i=0; i<currentIndex; i++) {
+            Book book = books[i];
+            if (book != null) {
+                totalValue += book.getPrice() * book.getQuantityInStock();
+                // This line combines all the above elements. It calculates the total value of a book and adds it to
+                // the cumulative total value of the inventory using the += operator. This way, the total value of each
+                // book is summed up as the loop iterates through the inventory.
+            }
+        }
+        return totalValue;
+    }
+
 
 }

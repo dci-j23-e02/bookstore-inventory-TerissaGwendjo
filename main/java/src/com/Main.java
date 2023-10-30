@@ -30,6 +30,25 @@ public class Main {
     // Display the inventory again
     System.out.println("Inventory after removing a book:");
     myInventory.displayInventory();
+
+    // Search for a book by title or author
+    Book foundBook = myInventory.searchBook("Limbe", "Emmanuel Iduma");
+    if (foundBook != null) {
+      System.out.println("Book found: " + foundBook.toString());
+    } else {
+      System.out.println("Book not found.");
+    }
+
+    double totalValue = myInventory.calculateTotalInventoryValue();
+    System.out.println("Total Inventory value:\n$" + totalValue);
   }
 
 }
+
+ // more complicated but here for reference!
+/* public Book searchBook(String searchString) {
+        for (int i = 0; i < currentIndex; i++) {
+            Book book = books[i];
+            if (book != null && (book.getTitle().equalsIgnoreCase(searchString) || book.getAuthor().equalsIgnoreCase(searchString))) {
+                return book; // Match found, return the book
+            }*/
