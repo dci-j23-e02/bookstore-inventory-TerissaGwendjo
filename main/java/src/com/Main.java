@@ -44,11 +44,3 @@ public class Main {
   }
 
 }
-
- // more complicated but here for reference!
-/* public Book searchBook(String searchString) {
-        for (int i = 0; i < currentIndex; i++) {
-            Book book = books[i];
-            if (book != null && (book.getTitle().equalsIgnoreCase(searchString) || book.getAuthor().equalsIgnoreCase(searchString))) {
-                return book; // Match found, return the book
-            }*/
