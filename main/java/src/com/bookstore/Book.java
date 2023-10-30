@@ -53,12 +53,12 @@ public class Book {
     // toString method to display the book information.
     @Override
     public String toString() {
-        return "Book Information:\n" +
+        return "Book Information:\n\n" +
         "Title: " + title + "\n" +
         "Author: " + author + "\n" +
         "Price: $" + price + "\n" +
         "Quantity in Stock: " + quantityInStock + "\n" ;
-        //"\n" is an escape sequence that represents a newline character. It is used to create a new line
+        //"\n" is an escape sequence that represents a newline character. It is used to create a new line and \n\n for 2 lines
         // or line break in a string
     }
 }
