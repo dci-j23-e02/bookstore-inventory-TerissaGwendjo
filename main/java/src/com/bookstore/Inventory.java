@@ -90,3 +90,27 @@ public class Inventory {
             if (book != null && (book.getTitle().equalsIgnoreCase(searchString) || book.getAuthor().equalsIgnoreCase(searchString))) {
                 return book; // Match found, return the book
             }*/
+
+/*
+Constructors and methods are both integral components of object-oriented programming in languages like Java. However,
+they serve different purposes and have distinct characteristics. Here's a comparison of constructors and methods:
+
+Constructors:
+
+Purpose: Constructors are special methods used to initialize objects when they are created. They set the initial state
+of an object and allocate any necessary resources.
+Naming: Constructors have the same name as the class in which they are defined.
+Return Type: Constructors have no return type. They do not return any value; their primary role is to perform setup tasks.
+Invoked Automatically: Constructors are called automatically when you create an instance (object) of a class using
+the new keyword. You don't call constructors explicitly.*/
+
+/*Methods:
+
+Purpose: Methods are functions or procedures defined within a class that perform specific tasks or operations.
+They are used to encapsulate behavior and actions that objects can perform.
+Naming: Methods have distinct names that describe the action they perform. The method names are chosen to reflect
+the purpose of the operation.
+Return Type: Methods have a return type that specifies the data type of the value they return. They can return values
+or perform actions without returning anything.
+Invoked Explicitly: Methods are called explicitly in your code. To execute a method, you use the method name, provide
+any required arguments, and invoke it in your code.*/

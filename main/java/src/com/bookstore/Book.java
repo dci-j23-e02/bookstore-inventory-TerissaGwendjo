@@ -11,7 +11,7 @@ public class Book {
     private int quantityInStock;
 
 
-    //  Include a constructor to initialize these attributes
+    //  Include a constructor to initialize these attributes. Always has same name as the class
     public Book (String title, String author, double price, int quantityInStock){
         this.title = title;
         this.author = author;
@@ -61,6 +61,5 @@ public class Book {
         //"\n" is an escape sequence that represents a newline character. It is used to create a new line and \n\n for 2 lines
         // or line break in a string
     }
-
 
 }

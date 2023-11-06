@@ -2,7 +2,6 @@ package com;
 
 import com.bookstore.Book;
 import com.bookstore.Inventory;
-import org.w3c.dom.ls.LSOutput;
 
 public class Main {
 
