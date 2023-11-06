@@ -3,10 +3,13 @@ package com.bookstore;
 
 public class Inventory {
     private Book[] books; //declare a private 1D array of Book objects.
+    //private List<Book> books; is more flexible to be able to instantiate by either 'ArrayList' or 'LinkedList'
     private int currentIndex;  // represents the current number of books in the inventory.
 
     // Constructor to initialize the array and other variables
     public Inventory ( int size) {
+        // initializes an array of Book objects called books. books is an instance variable of the Inventory class,
+        // which was declared earlier in the class to hold an array of Book objects. The constructor initializes it.
         books = new Book[size];
         currentIndex = 0;
     }
@@ -25,6 +28,7 @@ public class Inventory {
     public void removeBook (String title) { // It takes a String argument title, which represents the title of the book you want to remove from the inventory
         for (int i = 0; i < currentIndex; i++) {
             if (books[i] != null && books[i].getTitle().equals(title)) {
+                 //if (this.books.get(i) != null && this.books.get(i).getTitle().equals(title)){...}
                 books[i] = null;
                 // Shift remaining books to fill the gab left
                 for (int j=i; j<currentIndex-1; j++) {
@@ -60,6 +64,7 @@ public class Inventory {
             Book book = books[i];
             if (book != null && (book.getTitle().equals(title)) || book.getAuthor().equals(author)){
                 return book; // Match found, return book
+                //for(Book book:this.books)if(book.getTitle().toLowerCase().equals(title.toLowerCase()){return book;}
             }
         }
         return null; // no match found
@@ -82,6 +87,9 @@ public class Inventory {
 
 }
 
+
+//So, this.books.add(book); adds the book object to the books collection within the current class.
+// The specific implementation and type of the collection can vary, but it's a common pattern for adding items to a collection in Java.
 
 // more complicated approach for searchbook! Just here for future reference!
 /* public Book searchBook(String searchString) {
